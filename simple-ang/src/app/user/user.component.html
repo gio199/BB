@@ -1,0 +1,10 @@
+<h1>List Of Users</h1>
+
+<ul *ngIf="userList">
+  <li *ngFor="let user of userList">
+    <p class="name">{{ user.name }}</p>
+    <p class="username">{{ user.username }}</p>
+    <p class="email">{{ user.email }}</p>
+    <a class="site" href="{{ user.website }}">site</a>
+  </li>
+</ul>
